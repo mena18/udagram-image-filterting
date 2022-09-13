@@ -1,14 +1,11 @@
-import * as dotenv from "dotenv";
-dotenv.config();
-
 import cors from "cors";
 import express from "express";
+import { config } from "./config/config";
 import { sequelize } from "./sequelize";
 
 import { IndexRouter } from "./controllers/v0/index.router";
 
 import bodyParser from "body-parser";
-import { config } from "./config/config";
 import { V0_FEED_MODELS } from "./controllers/v0/model.index";
 
 (async () => {
