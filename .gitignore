@@ -44,3 +44,4 @@ set_env.sh
 .env
 *.env
 deploy/
+udagram-api/
